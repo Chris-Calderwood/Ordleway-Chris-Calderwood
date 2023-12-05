@@ -129,13 +129,13 @@ public class Ordleway {
                 System.out.print(ANSI_YELLOW_BACKGROUND + ANSI_BLACK + keyboard.charAt(i));
                 System.out.print(ANSI_RESET + " ");
             }
-            /*else if (count != 0){
-                System.out.print(ANSI_WHITE_BACKGROUND + ANSI_BLACK + keyboard.charAt(i));
-                System.out.print(ANSI_RESET + " ");h
-            }*/
-            else {
+            else if (count == 7){
                 System.out.print(ANSI_RESET);
                 System.out.print(keyboard.charAt(i) + " ");
+            }
+            else {
+                System.out.print(ANSI_WHITE_BACKGROUND + ANSI_BLACK + keyboard.charAt(i));
+                System.out.print(ANSI_RESET + " ");
             }
             count = 0;
         }
