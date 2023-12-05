@@ -70,7 +70,7 @@ public class EnglishToPigLatin {
             for (int h=0; h<pigLatinWords.size(); h++) { // loop writes all elements of sorted array list in text file
                 out.write(pigLatinWords.get(h) + "\n");
             }
-            out.close(); // close FileWriter object h
+            out.close(); // close FileWriter object
         }
         catch (IOException e) {
             throw new RuntimeException(e); // if there is an IOException, output error message
